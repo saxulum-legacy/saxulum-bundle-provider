@@ -17,11 +17,14 @@ abstract class AbstractBundleProvider implements ServiceProviderInterface
      */
     protected function addCommands(Application $app)
     {
-        $app['console.command.paths'] = $app->share($app->extend('console.command.paths', function ($paths) {
-            $paths[] = $this->getPath() . '/Command';
+        $path = $this->getPath();
+        $app['console.command.paths'] = $app->share(
+            $app->extend('console.command.paths', function ($paths) use ($path) {
+                $paths[] = $path . '/Command';
 
-            return $paths;
-        }));
+                return $paths;
+            })
+        );
     }
 
     /**
@@ -29,11 +32,14 @@ abstract class AbstractBundleProvider implements ServiceProviderInterface
      */
     protected function addControllers(Application $app)
     {
-        $app['route_controller_paths'] = $app->share($app->extend('route_controller_paths', function ($paths) {
-            $paths[] = $this->getPath() . '/Controller';
+        $path = $this->getPath();
+        $app['route_controller_paths'] = $app->share(
+            $app->extend('route_controller_paths', function ($paths) use ($path) {
+                $paths[] = $path . '/Controller';
 
-            return $paths;
-        }));
+                return $paths;
+            })
+        );
     }
 
     /**
@@ -71,11 +77,14 @@ abstract class AbstractBundleProvider implements ServiceProviderInterface
      */
     protected function addTranslatorRessources(Application $app)
     {
-        $app['translation_paths'] = $app->share($app->extend('translation_paths', function ($paths) {
-            $paths[] = $this->getPath() . '/Resources/translations';
+        $path = $this->getPath();
+        $app['translation_paths'] = $app->share(
+            $app->extend('translation_paths', function ($paths) use ($path) {
+                $paths[] = $path . '/Resources/translations';
 
-            return $paths;
-        }));
+                return $paths;
+            })
+        );
     }
 
     /**
