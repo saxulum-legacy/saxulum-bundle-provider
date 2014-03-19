@@ -6,6 +6,7 @@ saxulum-bundle-provider
 [![Build Status](https://api.travis-ci.org/saxulum/saxulum-bundle-provider.png?branch=master)](https://travis-ci.org/saxulum/saxulum-bundle-provider)
 [![Total Downloads](https://poser.pugx.org/saxulum/saxulum-bundle-provider/downloads.png)](https://packagist.org/packages/saxulum/saxulum-bundle-provider)
 [![Latest Stable Version](https://poser.pugx.org/saxulum/saxulum-bundle-provider/v/stable.png)](https://packagist.org/packages/saxulum/saxulum-bundle-provider)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/saxulum/saxulum-bundle-provider/badges/quality-score.png?s=6e3b60fbe45e652fe01b71d77f7564e07b4fc5ed)](https://scrutinizer-ci.com/g/saxulum/saxulum-bundle-provider/)
 
 Features
 --------
