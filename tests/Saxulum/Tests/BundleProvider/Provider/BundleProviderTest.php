@@ -121,7 +121,7 @@ class BundleProviderTest extends WebTestCase
         ));
 
         $app->register(new DoctrineOrmServiceProvider(), array(
-            'orm.proxies_dir' => __DIR__ . '/../../../../../doctrine/proxies'
+            'orm.proxies_dir' => __DIR__ . '/../../../../../cache/doctrine/proxies'
         ));
 
         $app->register(new TranslationServiceProvider());
