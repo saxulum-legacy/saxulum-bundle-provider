@@ -17,7 +17,7 @@ Requirements
 ------------
 
 * php >=5.3
-* Silex >=1.1
+* Silex ~1.1
 
 Suggestions
 -----------

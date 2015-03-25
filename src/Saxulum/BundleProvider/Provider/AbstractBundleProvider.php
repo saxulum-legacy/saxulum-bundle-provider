@@ -75,7 +75,7 @@ abstract class AbstractBundleProvider implements ServiceProviderInterface
     /**
      * @param Application $app
      */
-    protected function addTranslatorRessources(Application $app)
+    protected function addTranslatorResources(Application $app)
     {
         $path = $this->getPath();
         $app['translation_paths'] = $app->share(
@@ -85,6 +85,15 @@ abstract class AbstractBundleProvider implements ServiceProviderInterface
                 return $paths;
             })
         );
+    }
+
+    /**
+     * @param Application $app
+     * @deprecated
+     */
+    protected function addTranslatorRessources(Application $app)
+    {
+        $this->addTranslatorResources($app);
     }
 
     /**

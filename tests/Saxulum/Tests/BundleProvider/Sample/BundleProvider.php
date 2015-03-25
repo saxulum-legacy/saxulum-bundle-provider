@@ -12,7 +12,7 @@ class BundleProvider extends AbstractBundleProvider
         $this->addCommands($app);
         $this->addControllers($app);
         $this->addDoctrineOrmMappings($app);
-        $this->addTranslatorRessources($app);
+        $this->addTranslatorResources($app);
         $this->addTwigLoaderFilesystemPath($app);
     }
 
