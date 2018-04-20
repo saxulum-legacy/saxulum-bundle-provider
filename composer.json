@@ -32,5 +32,6 @@
     "autoload": {
         "psr-0": { "Saxulum\\BundleProvider": "src/" }
     },
-    "minimum-stability": "beta"
+    "minimum-stability": "beta",
+    "abandoned": true
 }
